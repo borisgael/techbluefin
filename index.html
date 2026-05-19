@@ -13,6 +13,8 @@
 <meta property="og:url" content="https://techbluefin.com">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://techbluefin.com">
+<link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -60,15 +62,7 @@
   }
   .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; flex-shrink: 0; white-space: nowrap; }
   .logo-mark { position: relative; width: 40px; height: 40px; flex-shrink: 0; }
-  .logo-mark .fin1 {
-    position: absolute; width: 28px; height: 28px; border-radius: 50% 50% 50% 8px;
-    background: linear-gradient(135deg, var(--ocean), var(--teal)); top: 0; left: 0;
-    transform: rotate(-15deg);
-  }
-  .logo-mark .fin2 {
-    position: absolute; width: 18px; height: 18px; border-radius: 50%;
-    background: var(--amber); bottom: 1px; right: 1px;
-  }
+  .logo-mark svg { width: 100%; height: 100%; }
   .nav-brand {
     font-family: 'Inter', sans-serif; font-weight: 800; font-size: 1.2rem;
     color: var(--white); letter-spacing: -0.03em; transition: color 0.4s;
@@ -519,7 +513,7 @@
 <nav id="navbar" aria-label="Navigation principale">
   <div class="nav-inner">
     <a href="#" class="nav-logo">
-      <div class="logo-mark"><div class="fin1"></div><div class="fin2"></div></div>
+      <div class="logo-mark"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M5 75 Q50 -10 95 75" stroke="rgba(2,132,199,0.22)" stroke-width="3.2" fill="none" stroke-linecap="round"/><path d="M18 68 Q50 5 82 68" stroke="rgba(14,165,233,0.5)" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M30 58 Q50 18 70 58" stroke="rgba(20,184,166,0.9)" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="50" cy="18" r="13" fill="none" stroke="rgba(20,184,166,0.25)" stroke-width="1.2"/><circle cx="50" cy="18" r="8.5" fill="#14B8A6"/><circle cx="8" cy="73" r="4" fill="rgba(2,132,199,0.45)"/><circle cx="92" cy="73" r="4" fill="rgba(2,132,199,0.45)"/></svg></div>
       <span class="nav-brand">TechBluefin</span>
     </a>
     <ul class="nav-center">
@@ -570,9 +564,9 @@
     </div>
     <div class="hero-visual">
       <div class="hero-card-stack">
-        <div class="h-card hc1"><div class="hc-icon ic1">⚡</div><div class="hc-title" data-i18n="hc1_t">Développement Digital</div><div class="hc-desc" data-i18n="hc1_d">Applications web, mobile et desktop sur mesure pour votre écosystème</div><div class="hc-bar"><div class="hc-bar-fill bf1"></div></div></div>
+        <div class="h-card hc1"><div class="hc-icon ic1">🏗️</div><div class="hc-title" data-i18n="hc1_t">Développement Digital</div><div class="hc-desc" data-i18n="hc1_d">Applications web, mobile et desktop sur mesure pour votre écosystème</div><div class="hc-bar"><div class="hc-bar-fill bf1"></div></div></div>
         <div class="h-card hc2"><div class="hc-icon ic2">🛡️</div><div class="hc-title" data-i18n="hc2_t">Cybersécurité</div><div class="hc-desc" data-i18n="hc2_d">Audit, durcissement et supervision pour protéger vos actifs numériques</div><div class="hc-bar"><div class="hc-bar-fill bf2"></div></div></div>
-        <div class="h-card hc3"><div class="hc-icon ic3">🤖</div><div class="hc-title" data-i18n="hc3_t">Intelligence Artificielle</div><div class="hc-desc" data-i18n="hc3_d">Chatbots, Computer Vision et reconnaissance faciale avancée</div><div class="hc-bar"><div class="hc-bar-fill bf3"></div></div></div>
+        <div class="h-card hc3"><div class="hc-icon ic3">💳</div><div class="hc-title" data-i18n="hc3_t">Intelligence Artificielle</div><div class="hc-desc" data-i18n="hc3_d">Chatbots, Computer Vision et reconnaissance faciale avancée</div><div class="hc-bar"><div class="hc-bar-fill bf3"></div></div></div>
       </div>
     </div>
   </div>
@@ -623,11 +617,11 @@
       <div><p class="section-desc reveal" data-i18n="exp_desc">Nous couvrons l'intégralité du cycle de vie de vos projets technologiques, de la vision stratégique à la maintenance opérationnelle.</p></div>
     </div>
     <div class="expertise-grid">
-      <div class="ecard reveal"><div class="ecard-top"><div class="ecard-icon ei-dev">⚡</div><span class="ecard-num">01</span></div><h3 data-i18n-html="e1t">Développement &<br>Écosystèmes Digitaux</h3><ul class="ecard-list"><li data-i18n="e1a">Logiciels et applications web, mobile et desktop</li><li data-i18n="e1b">Systèmes d'information, portails et back-office</li><li data-i18n="e1c">Intégrations API et connecteurs inter-systèmes</li></ul></div>
-      <div class="ecard reveal reveal-d1"><div class="ecard-top"><div class="ecard-icon ei-infra">☁️</div><span class="ecard-num">02</span></div><h3 data-i18n-html="e2t">Infrastructure, Cloud<br>& Infogérance</h3><ul class="ecard-list"><li data-i18n="e2a">Installation et intégration technique complète</li><li data-i18n="e2b">Hébergement cloud et on-premise avec supervision</li><li data-i18n="e2c">Maintenance préventive et amélioration continue</li></ul></div>
-      <div class="ecard reveal reveal-d2"><div class="ecard-top"><div class="ecard-icon ei-conseil">🧠</div><span class="ecard-num">03</span></div><h3 data-i18n-html="e3t">Conseil &<br>Capital Humain</h3><ul class="ecard-list"><li data-i18n="e3a">AMOA/MOE, architecture et stratégie digitale</li><li data-i18n="e3b">Expertise à la demande : développeurs, DevOps, QA</li><li data-i18n="e3c">Formation technique et assistance sur site</li></ul></div>
-      <div class="ecard reveal"><div class="ecard-top"><div class="ecard-icon ei-telecom">🔒</div><span class="ecard-num">04</span></div><h3 data-i18n-html="e4t">Télécoms &<br>Cybersécurité</h3><ul class="ecard-list"><li data-i18n="e4a">Solutions SI et télécommunications d'entreprise</li><li data-i18n="e4b">Audit de sécurité, contrôle d'accès et durcissement</li><li data-i18n="e4c">Supervision continue et gestion proactive des risques</li></ul></div>
-      <div class="ecard reveal reveal-d1"><div class="ecard-top"><div class="ecard-icon ei-ia">🤖</div><span class="ecard-num">05</span></div><h3 data-i18n-html="e5t">Intelligence Artificielle<br>& Innovation</h3><ul class="ecard-list"><li data-i18n="e5a">Chatbots et assistants virtuels intelligents</li><li data-i18n="e5b">Reconnaissance faciale pour le contrôle d'accès</li><li data-i18n="e5c">Surveillance intelligente et Computer Vision</li></ul></div>
+      <div class="ecard reveal"><div class="ecard-top"><div class="ecard-icon ei-dev">🏗️</div><span class="ecard-num">01</span></div><h3 data-i18n-html="e1t">Développement &<br>Écosystèmes Digitaux</h3><ul class="ecard-list"><li data-i18n="e1a">Logiciels et applications web, mobile et desktop</li><li data-i18n="e1b">Systèmes d'information, portails et back-office</li><li data-i18n="e1c">Intégrations API et connecteurs inter-systèmes</li></ul></div>
+      <div class="ecard reveal reveal-d1"><div class="ecard-top"><div class="ecard-icon ei-infra">🌐</div><span class="ecard-num">02</span></div><h3 data-i18n-html="e2t">Infrastructure, Cloud<br>& Infogérance</h3><ul class="ecard-list"><li data-i18n="e2a">Installation et intégration technique complète</li><li data-i18n="e2b">Hébergement cloud et on-premise avec supervision</li><li data-i18n="e2c">Monitoring réseau et centre d'opérations (NOC) 24/7</li></ul></div>
+      <div class="ecard reveal reveal-d2"><div class="ecard-top"><div class="ecard-icon ei-conseil">💻</div><span class="ecard-num">03</span></div><h3 data-i18n-html="e3t">Conseil &<br>Capital Humain</h3><ul class="ecard-list"><li data-i18n="e3a">AMOA/MOE, architecture et stratégie digitale</li><li data-i18n="e3b">Expertise à la demande : développeurs, DevOps, QA</li><li data-i18n="e3c">Formation technique et assistance sur site</li></ul></div>
+      <div class="ecard reveal"><div class="ecard-top"><div class="ecard-icon ei-telecom">💳</div><span class="ecard-num">04</span></div><h3 data-i18n-html="e4t">Télécoms &<br>Cybersécurité</h3><ul class="ecard-list"><li data-i18n="e4a">Solutions SI et télécommunications d'entreprise</li><li data-i18n="e4b">Audit de sécurité, contrôle d'accès et durcissement</li><li data-i18n="e4c">Supervision continue et gestion proactive des risques</li></ul></div>
+      <div class="ecard reveal reveal-d1"><div class="ecard-top"><div class="ecard-icon ei-ia">🧠</div><span class="ecard-num">05</span></div><h3 data-i18n-html="e5t">Intelligence Artificielle<br>& Innovation</h3><ul class="ecard-list"><li data-i18n="e5a">Chatbots et assistants virtuels intelligents</li><li data-i18n="e5b">Reconnaissance faciale pour le contrôle d'accès</li><li data-i18n="e5c">Surveillance intelligente et Computer Vision</li></ul></div>
       <div class="ecard reveal reveal-d2"><div class="ecard-top"><div class="ecard-icon ei-support">🎧</div><span class="ecard-num">06</span></div><h3 data-i18n-html="e6t">Support &<br>Maintenance</h3><ul class="ecard-list"><li data-i18n="e6a">Support multi-niveaux N1, N2 et N3 selon périmètre</li><li data-i18n="e6b">SLA contractuels et monitoring 24/7</li><li data-i18n="e6c">Documentation complète et transfert de compétences</li></ul></div>
     </div>
   </div>
@@ -674,7 +668,7 @@
     <div class="cta-text"><h2 data-i18n-html="cta_h">Prêt à transformer<br>votre organisation ?</h2><p data-i18n="cta_p">Discutons de vos enjeux et construisons ensemble la solution qui accélérera votre performance. Premier échange sans engagement.</p></div>
     <div class="cta-actions">
       <a href="#contact" class="btn btn-primary" data-i18n="cta_btn">Démarrer un projet →</a>
-      <a href="mailto:contact@techbluefin.com" class="btn btn-outline">contact@techbluefin.com</a>
+      <a href="mailto:infos@techbluefin.com" class="btn btn-outline">infos@techbluefin.com</a>
     </div>
   </div>
 </div>
@@ -688,9 +682,9 @@
     <div class="contact-layout">
       <div class="contact-left">
         <div class="contact-cards">
-          <div class="ccard reveal"><div class="ccard-icon">📍</div><div><div class="ccard-label" data-i18n="ct_hq">Siège social</div><div class="ccard-value">Commune de la Gombe<br>Kinshasa — République Démocratique du Congo</div></div></div>
-          <div class="ccard reveal reveal-d1"><div class="ccard-icon">📧</div><div><div class="ccard-label">Email</div><div class="ccard-value"><a href="mailto:contact@techbluefin.com">contact@techbluefin.com</a></div></div></div>
-          <div class="ccard reveal reveal-d2"><div class="ccard-icon">📞</div><div><div class="ccard-label" data-i18n="ct_ph">Téléphone</div><div class="ccard-value"><a href="tel:+243000000000">+243 000 000 000</a></div></div></div>
+          <div class="ccard reveal"><div class="ccard-icon">📍</div><div><div class="ccard-label" data-i18n="ct_hq">Siège social</div><div class="ccard-value">Concession COTEX No 63, Ave Colonel Mondjiba<br>Kinshasa — République Démocratique du Congo</div></div></div>
+          <div class="ccard reveal reveal-d1"><div class="ccard-icon">📧</div><div><div class="ccard-label">Email</div><div class="ccard-value"><a href="mailto:infos@techbluefin.com">infos@techbluefin.com</a></div></div></div>
+          <div class="ccard reveal reveal-d2"><div class="ccard-icon">📞</div><div><div class="ccard-label" data-i18n="ct_ph">Téléphone</div><div class="ccard-value"><a href="tel:+243848580180">+243 848 580 180</a><br><a href="tel:+243847089668">+243 847 089 668</a></div></div></div>
           <div class="ccard reveal reveal-d3"><div class="ccard-icon">🌐</div><div><div class="ccard-label" data-i18n="ct_web">Site web</div><div class="ccard-value"><a href="https://techbluefin.com">techbluefin.com</a></div></div></div>
         </div>
         <div class="contact-legal reveal"><strong>TechBluefin SARL</strong><br><span data-i18n="ct_leg">Siège : Kinshasa, RDC</span></div>
@@ -698,7 +692,7 @@
       <div class="contact-form-wrap reveal">
         <h3 data-i18n="fm_t">Envoyez-nous un message</h3>
         <p class="form-sub" data-i18n="fm_sub">Tous les champs marqués d'un * sont obligatoires.</p>
-        <form class="cform" id="contactForm" action="https://formsubmit.co/contact@techbluefin.com" method="POST">
+        <form class="cform" id="contactForm" action="https://formsubmit.co/infos@techbluefin.com" method="POST">
           <input type="hidden" name="_subject" id="emailSubject" value="Nouveau message depuis techbluefin.com">
           <input type="hidden" name="_next" value="https://techbluefin.com#contact">
           <input type="hidden" name="_captcha" value="true">
@@ -721,7 +715,7 @@
     <div class="footer-top">
       <div>
         <div class="footer-logo">
-          <div class="logo-mark" style="width:34px;height:34px;"><div class="fin1" style="width:24px;height:24px;"></div><div class="fin2" style="width:15px;height:15px;bottom:0;right:0;"></div></div>
+          <div class="logo-mark" style="width:34px;height:34px;"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M5 75 Q50 -10 95 75" stroke="rgba(2,132,199,0.22)" stroke-width="3.2" fill="none" stroke-linecap="round"/><path d="M18 68 Q50 5 82 68" stroke="rgba(14,165,233,0.5)" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M30 58 Q50 18 70 58" stroke="rgba(20,184,166,0.9)" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="50" cy="18" r="13" fill="none" stroke="rgba(20,184,166,0.25)" stroke-width="1.2"/><circle cx="50" cy="18" r="8.5" fill="#14B8A6"/><circle cx="8" cy="73" r="4" fill="rgba(2,132,199,0.45)"/><circle cx="92" cy="73" r="4" fill="rgba(2,132,199,0.45)"/></svg></div>
           <span>TechBluefin</span>
         </div>
         <p class="footer-brand-desc" data-i18n="ft_desc">Société de services numériques dédiée à l'accompagnement des entreprises et institutions africaines dans leur transformation digitale.</p>
@@ -731,7 +725,7 @@
       </div>
       <div class="footer-col"><h4 data-i18n="nav_expertise">Expertise</h4><ul><li><a href="#expertise" data-i18n="ft_dev">Développement Digital</a></li><li><a href="#expertise" data-i18n="ft_cloud">Cloud & Infogérance</a></li><li><a href="#expertise" data-i18n="ft_cons">Conseil & Stratégie</a></li><li><a href="#expertise" data-i18n="ft_cyber">Cybersécurité</a></li><li><a href="#expertise" data-i18n="ft_ai">Intelligence Artificielle</a></li><li><a href="#expertise" data-i18n="ft_sup">Support</a></li></ul></div>
       <div class="footer-col"><h4 data-i18n="ft_company">Entreprise</h4><ul><li><a href="#about" data-i18n="nav_about">À propos</a></li><li><a href="#values" data-i18n="ft_val">Nos valeurs</a></li><li><a href="#method" data-i18n="ft_met">Notre approche</a></li><li><a href="#why" data-i18n="ft_why">Pourquoi nous</a></li><li><a href="#contact" data-i18n="nav_contact">Contact</a></li></ul></div>
-      <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:contact@techbluefin.com">contact@techbluefin.com</a></li><li><a href="tel:+243000000000">+243 000 000 000</a></li><li><a href="#">Kinshasa, RDC</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul><li><a href="mailto:infos@techbluefin.com">infos@techbluefin.com</a></li><li><a href="tel:+243848580180">+243 848 580 180</a></li><li><a href="#">Kinshasa, RDC</a></li></ul></div>
     </div>
     <div class="footer-bottom">
       <span class="footer-copy" data-i18n="ft_copy">© 2026 TechBluefin SARL — Tous droits réservés.</span>
@@ -747,9 +741,9 @@ hero_title:'Le partenaire<br>digital du<br><span class="grad">Congo</span>',
 hero_sub:'De Kinshasa à Lubumbashi, de Goma à Matadi — nous concevons et déployons des <strong>solutions technologiques robustes et sécurisées</strong> adaptées aux réalités du marché congolais et de l\'Afrique centrale.',
 hero_btn1:'Découvrir nos services <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
 hero_btn2:"Nous contacter",hero_trust:"<strong>Entreprises & Institutions</strong><br>nous font déjà confiance",
-hc1_t:"Développement Digital",hc1_d:"Applications web, mobile et desktop sur mesure pour votre écosystème",
-hc2_t:"Cybersécurité",hc2_d:"Audit, durcissement et supervision pour protéger vos actifs numériques",
-hc3_t:"Intelligence Artificielle",hc3_d:"Chatbots, Computer Vision et reconnaissance faciale avancée",
+hc1_t:"Infrastructure IT",hc1_d:"Câblage, salles serveurs, CCTV et équipements IT",
+hc2_t:"Cybersécurité",hc2_d:"Réseaux LAN/WAN, VPN, Firewall et raccordements VSAT",
+hc3_t:"Fintech & Paiement",hc3_d:"M-Pesa, Orange Money et solutions de paiement mobile",
 marquee:'<span class="marquee-item">Cloud & Infrastructure</span><span class="marquee-item">Intelligence Artificielle</span><span class="marquee-item">Cybersécurité</span><span class="marquee-item">Développement Web & Mobile</span><span class="marquee-item">Conseil & Stratégie</span><span class="marquee-item">DevOps & Infogérance</span><span class="marquee-item">Télécommunications</span><span class="marquee-item">Support N1/N2/N3</span><span class="marquee-item">Cloud & Infrastructure</span><span class="marquee-item">Intelligence Artificielle</span><span class="marquee-item">Cybersécurité</span><span class="marquee-item">Développement Web & Mobile</span><span class="marquee-item">Conseil & Stratégie</span><span class="marquee-item">DevOps & Infogérance</span><span class="marquee-item">Télécommunications</span><span class="marquee-item">Support N1/N2/N3</span>',
 about_ey:"Qui sommes-nous",about_main:'TechBluefin est une <strong>société de services numériques congolaise</strong>, basée à Kinshasa, dédiée à l\'accompagnement des entreprises, institutions et organisations de la <strong>RDC</strong> dans leur transformation digitale.',
 about_p1:"La RDC est le plus grand pays francophone du monde avec un potentiel numérique immense. Mais pour que la transformation digitale congolaise soit réelle, elle doit reposer sur des fondations inébranlables et des acteurs locaux de confiance.",
@@ -762,11 +756,11 @@ v2t:"Sécurité & Confiance",v2g:"Intégrité · Résilience · Protection · P�
 v3t:"Excellence dans l'Exécution",v3g:"Précision · Fiabilité · Qualité · Professionnalisme",v3p:"De la conception à la maintenance, chaque étape du cycle de vie du projet est traitée avec une précision chirurgicale et un souci constant de la qualité.",
 v4t:"Clarté & Simplicité",v4g:"Transparence · Efficacité · Lisibilité",v4p:"Nous rendons la technologie complexe simple et accessible pour nos clients. Pas de jargon inutile, juste des résultats concrets et mesurables.",
 exp_ey:"Nos domaines d'expertise",exp_title:"Des solutions complètes<br>pour chaque défi digital",exp_desc:"Nous couvrons l'intégralité du cycle de vie de vos projets technologiques, de la vision stratégique à la maintenance opérationnelle.",
-e1t:"Développement &<br>Écosystèmes Digitaux",e1a:"Logiciels et applications web, mobile et desktop",e1b:"Systèmes d'information, portails et back-office",e1c:"Intégrations API et connecteurs inter-systèmes",
-e2t:"Infrastructure, Cloud<br>& Infogérance",e2a:"Installation et intégration technique complète",e2b:"Hébergement cloud et on-premise avec supervision",e2c:"Maintenance préventive et amélioration continue",
-e3t:"Conseil &<br>Capital Humain",e3a:"AMOA/MOE, architecture et stratégie digitale",e3b:"Expertise à la demande : développeurs, DevOps, QA",e3c:"Formation technique et assistance sur site",
-e4t:"Télécoms &<br>Cybersécurité",e4a:"Solutions SI et télécommunications d'entreprise",e4b:"Audit de sécurité, contrôle d'accès et durcissement",e4c:"Supervision continue et gestion proactive des risques",
-e5t:"Intelligence Artificielle<br>& Innovation",e5a:"Chatbots et assistants virtuels intelligents",e5b:"Reconnaissance faciale pour le contrôle d'accès",e5c:"Surveillance intelligente et Computer Vision",
+e1t:"Infrastructure IT<br>& Équipements",e1a:"Câblage structuré Cat 5e/6 et fibre optique",e1b:"Salles serveurs, datacenters et systèmes CCTV",e1c:"Alimentation secourue (UPS) et maintenance IT",
+e2t:"Réseaux &<br>Cybersécurité",e2a:"Réseaux LAN/WAN et Wi-Fi entreprise haute performance",e2b:"VPN, Firewall et raccordements internet (fibre, VSAT, 4G)",e2c:"Monitoring réseau et centre d'opérations (NOC) 24/7",
+e3t:"Logiciels &<br>Applications Mobiles",e3a:"Applications web sur mesure, plateformes SaaS",e3b:"Systèmes ERP et CRM adaptés au marché congolais",e3c:"Applications Android & iOS et intégrations API",
+e4t:"Fintech &<br>Paiement Digital",e4a:"Plateformes M-Pesa, Orange Money et Airtel Money",e4b:"Solutions de micro-crédit et d'épargne numérique",e4c:"Outils de gestion financière pour PME congolaises",
+e5t:"Conseil &<br>Stratégie IT",e5a:"Audit technique et stratégie de transformation digitale",e5b:"Expertise à la demande : architectes, DevOps, QA",e5c:"Formation technique et accompagnement au changement",
 e6t:"Support &<br>Maintenance",e6a:"Support multi-niveaux N1, N2 et N3 selon périmètre",e6b:"SLA contractuels et monitoring 24/7",e6c:"Documentation complète et transfert de compétences",
 met_ey:"Notre approche",met_title:"Un accompagnement<br>de bout en bout",met_desc:"Chaque projet est unique. Notre méthodologie structurée garantit des résultats à la hauteur de vos ambitions.",
 s1t:"Audit & Analyse",s1p:"Compréhension de votre contexte, vos enjeux métiers et vos contraintes techniques.",
@@ -776,17 +770,17 @@ s4t:"Déploiement & Formation",s4p:"Mise en production sécurisée, transfert de
 s5t:"Opérations & Évolution",s5p:"Maintenance proactive, monitoring continu, SLA garantis et amélioration permanente.",
 why_ey:"Pourquoi TechBluefin",why_title:"Votre succès est<br>notre engagement",why_desc:"Ce qui nous distingue va au-delà de la technologie — c'est notre approche centrée sur vos résultats.",
 w1t:"Partenariat Durable",w1p:"Nous construisons des relations de confiance à long terme. Au-delà de la prestation, nous investissons dans votre réussite sur la durée.",
-w2t:"Exécution Solide & Transparente",w2p:"Reporting régulier, jalons clairs, zéro surprise — vous gardez le contrôle total à chaque étape de votre projet.",
+w2t:"Couverture Technologique 360°",w2p:"Du câble réseau à l'application fintech — tout passe par TechBluefin. Cohérence totale, responsabilité unique.",
 w3t:"Sécurité Intégrée dès la Conception",w3p:"Security by design, conformité et protection des données inscrites dans l'ADN de chaque solution livrée.",
-w4t:"Conçu pour le Terrain Congolais",w4p:"Des solutions pensées pour les réalités de la RDC : connectivité variable, infrastructures hétérogènes, contraintes énergétiques et scalabilité sur l'ensemble du territoire national.",
+w4t:"Réactivité Locale",w4p:"Des solutions pensées pour les réalités de la RDC : connectivité variable, infrastructures hétérogènes, contraintes énergétiques et scalabilité sur l'ensemble du territoire national.",
 cta_h:"Prêt à transformer<br>votre organisation ?",cta_p:"Discutons de vos enjeux et construisons ensemble la solution qui accélérera votre performance. Premier échange sans engagement.",cta_btn:"Démarrer un projet →",
 ct_title:"Parlons de votre projet",ct_desc:"Remplissez le formulaire ou contactez-nous directement. Notre équipe vous répondra sous 24 heures.",ct_hq:"Siège social",ct_ph:"Téléphone",ct_web:"Site web",ct_leg:"Siège : Kinshasa, RDC",
 fm_t:"Envoyez-nous un message",fm_sub:"Tous les champs marqués d'un * sont obligatoires.",fm_name:"Nom complet *",fm_name_ph:"Votre nom",fm_co:"Entreprise",fm_co_ph:"Nom de votre entreprise",fm_phone:"Téléphone",fm_serv:"Service qui vous intéresse",
-fm_sel:"Sélectionnez un domaine...",fm_o1:"Développement & Écosystèmes Digitaux",fm_o2:"Infrastructure, Cloud & Infogérance",fm_o3:"Conseil & Capital Humain",fm_o4:"Télécoms & Cybersécurité",fm_o5:"Intelligence Artificielle & Innovation",fm_o6:"Support & Maintenance",fm_o7:"Autre / Plusieurs domaines",
+fm_sel:"Sélectionnez un domaine...",fm_o1:"Infrastructure IT & Équipements",fm_o2:"Réseaux & Cybersécurité",fm_o3:"Logiciels & Applications Mobiles",fm_o4:"Fintech & Paiement Digital",fm_o5:"Conseil & Stratégie IT",fm_o6:"Support & Maintenance",fm_o7:"Autre / Plusieurs domaines",
 fm_msg_ph:"Décrivez brièvement votre projet, vos besoins ou vos questions...",
 fm_send:'Envoyer le message <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
 ft_desc:"Société de services numériques congolaise dédiée à l'accompagnement des entreprises et institutions de la RDC dans leur transformation digitale.",
-ft_company:"Entreprise",ft_dev:"Développement Digital",ft_cloud:"Cloud & Infogérance",ft_cons:"Conseil & Stratégie",ft_cyber:"Cybersécurité",ft_ai:"Intelligence Artificielle",ft_sup:"Support",
+ft_company:"Entreprise",ft_dev:"Infrastructure IT",ft_cloud:"Réseaux & Sécurité",ft_cons:"Logiciels & Apps",ft_cyber:"Fintech",ft_ai:"Conseil IT",ft_sup:"Support",
 ft_val:"Nos valeurs",ft_met:"Notre approche",ft_why:"Pourquoi nous",ft_copy:"© 2026 TechBluefin SARL — Tous droits réservés.",ft_legal:"Mentions légales",ft_priv:"Politique de confidentialité",ft_terms:"CGU"
 },
 en:{nav_about:"About",nav_values:"Values",nav_expertise:"Expertise",nav_method:"Approach",nav_why:"Advantages",nav_contact:"Contact",nav_cta:"Start a project",
@@ -795,9 +789,9 @@ hero_title:'The digital<br>partner of<br>the <span class="grad">Congo</span>',
 hero_sub:'From Kinshasa to Lubumbashi, from Goma to Matadi — we design and deploy <strong>robust and secure technology solutions</strong> adapted to the realities of the Congolese market and Central Africa.',
 hero_btn1:'Explore our services <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
 hero_btn2:"Contact us",hero_trust:"<strong>Companies & Institutions</strong><br>already trust us",
-hc1_t:"Digital Development",hc1_d:"Custom web, mobile and desktop applications for your ecosystem",
-hc2_t:"Cybersecurity",hc2_d:"Auditing, hardening and monitoring to protect your digital assets",
-hc3_t:"Artificial Intelligence",hc3_d:"Chatbots, Computer Vision and advanced facial recognition",
+hc1_t:"IT Infrastructure",hc1_d:"Cabling, server rooms, CCTV and IT equipment",
+hc2_t:"Cybersecurity",hc2_d:"LAN/WAN networks, VPN, Firewall and VSAT connections",
+hc3_t:"Fintech & Payment",hc3_d:"M-Pesa, Orange Money and mobile payment solutions",
 marquee:'<span class="marquee-item">Cloud & Infrastructure</span><span class="marquee-item">Artificial Intelligence</span><span class="marquee-item">Cybersecurity</span><span class="marquee-item">Web & Mobile Development</span><span class="marquee-item">Consulting & Strategy</span><span class="marquee-item">DevOps & Managed Services</span><span class="marquee-item">Telecommunications</span><span class="marquee-item">L1/L2/L3 Support</span><span class="marquee-item">Cloud & Infrastructure</span><span class="marquee-item">Artificial Intelligence</span><span class="marquee-item">Cybersecurity</span><span class="marquee-item">Web & Mobile Development</span><span class="marquee-item">Consulting & Strategy</span><span class="marquee-item">DevOps & Managed Services</span><span class="marquee-item">Telecommunications</span><span class="marquee-item">L1/L2/L3 Support</span>',
 about_ey:"Who we are",about_main:'TechBluefin is a <strong>Congolese digital services company</strong>, based in Kinshasa, dedicated to supporting businesses, institutions and organizations across the <strong>DRC</strong> in their digital transformation.',
 about_p1:"The DRC is the world's largest French-speaking country with immense digital potential. But for Congo's digital transformation to be real, it must rest on unshakeable foundations and trusted local partners.",
@@ -810,11 +804,11 @@ v2t:"Security & Trust",v2g:"Integrity · Resilience · Protection · Sustainabil
 v3t:"Excellence in Execution",v3g:"Precision · Reliability · Quality · Professionalism",v3p:"From design to maintenance, every stage of the project lifecycle is handled with surgical precision and a constant focus on quality.",
 v4t:"Clarity & Simplicity",v4g:"Transparency · Efficiency · Readability",v4p:"We make complex technology simple and accessible for our clients. No unnecessary jargon — just concrete, measurable results.",
 exp_ey:"Our areas of expertise",exp_title:"Comprehensive solutions<br>for every digital challenge",exp_desc:"We cover the entire lifecycle of your technology projects, from strategic vision to operational maintenance.",
-e1t:"Development &<br>Digital Ecosystems",e1a:"Web, mobile and desktop software applications",e1b:"Information systems, portals and back-office",e1c:"API integrations and cross-system connectors",
-e2t:"Infrastructure, Cloud<br>& Managed Services",e2a:"Complete technical installation and integration",e2b:"Cloud and on-premise hosting with monitoring",e2c:"Preventive maintenance and continuous improvement",
-e3t:"Consulting &<br>Human Capital",e3a:"Project management, architecture and digital strategy",e3b:"On-demand expertise: developers, DevOps, QA",e3c:"Technical training and on-site assistance",
-e4t:"Telecoms &<br>Cybersecurity",e4a:"Enterprise IT and telecommunications solutions",e4b:"Security audits, access control and hardening",e4c:"Continuous monitoring and proactive risk management",
-e5t:"Artificial Intelligence<br>& Innovation",e5a:"Intelligent chatbots and virtual assistants",e5b:"Facial recognition for access control",e5c:"Smart surveillance and Computer Vision",
+e1t:"IT Infrastructure<br>& Equipment",e1a:"Cat 5e/6 and fiber optic structured cabling",e1b:"Server rooms, datacenters and CCTV systems",e1c:"Backup power (UPS) and IT equipment maintenance",
+e2t:"Networks &<br>Cybersecurity",e2a:"High-performance LAN/WAN and enterprise Wi-Fi",e2b:"VPN, Firewall and internet connections (fiber, VSAT, 4G)",e2c:"Network monitoring and operations center (NOC) 24/7",
+e3t:"Software &<br>Mobile Applications",e3a:"Custom web applications and SaaS platforms",e3b:"ERP and CRM systems adapted to the Congolese market",e3c:"Android & iOS apps and API integrations",
+e4t:"Fintech &<br>Digital Payment",e4a:"M-Pesa, Orange Money and Airtel Money platforms",e4b:"Micro-credit and digital savings solutions",e4c:"Financial management tools for Congolese SMEs",
+e5t:"IT Consulting<br>& Strategy",e5a:"Technical audit and digital transformation strategy",e5b:"On-demand expertise: architects, DevOps, QA",e5c:"Technical training and change management",
 e6t:"Support &<br>Maintenance",e6a:"Multi-tier L1, L2 and L3 support by scope",e6b:"Contractual SLAs and 24/7 monitoring",e6c:"Complete documentation and knowledge transfer",
 met_ey:"Our approach",met_title:"End-to-end<br>support",met_desc:"Every project is unique. Our structured methodology guarantees results that match your ambitions.",
 s1t:"Audit & Analysis",s1p:"Understanding your context, business challenges and technical constraints.",
@@ -824,17 +818,17 @@ s4t:"Deployment & Training",s4p:"Secure production rollout, knowledge transfer a
 s5t:"Operations & Evolution",s5p:"Proactive maintenance, continuous monitoring, guaranteed SLAs and ongoing improvement.",
 why_ey:"Why TechBluefin",why_title:"Your success is<br>our commitment",why_desc:"What sets us apart goes beyond technology — it's our results-driven approach.",
 w1t:"Lasting Partnership",w1p:"We build long-term relationships based on trust. Beyond delivery, we invest in your success over time.",
-w2t:"Solid & Transparent Execution",w2p:"Regular reporting, clear milestones, zero surprises — you maintain full control at every stage of your project.",
+w2t:"360° Technology Coverage",w2p:"From a network cable to a fintech app — everything through TechBluefin. Total coherence, single responsibility.",
 w3t:"Security Built Into the Design",w3p:"Security by design, compliance and data protection embedded in the DNA of every solution we deliver.",
-w4t:"Built for the Congolese Market",w4p:"Solutions designed for DRC realities: variable connectivity, heterogeneous infrastructure, energy constraints and scalability across the national territory.",
+w4t:"Local Responsiveness",w4p:"Solutions designed for DRC realities: variable connectivity, heterogeneous infrastructure, energy constraints and scalability across the national territory.",
 cta_h:"Ready to transform<br>your organization?",cta_p:"Let's discuss your challenges and build together the solution that will accelerate your performance. First consultation with no commitment.",cta_btn:"Start a project →",
 ct_title:"Let's talk about your project",ct_desc:"Fill out the form or contact us directly. Our team will respond within 24 hours.",ct_hq:"Headquarters",ct_ph:"Phone",ct_web:"Website",ct_leg:"HQ: Kinshasa, DRC",
 fm_t:"Send us a message",fm_sub:"All fields marked with * are required.",fm_name:"Full name *",fm_name_ph:"Your name",fm_co:"Company",fm_co_ph:"Your company name",fm_phone:"Phone",fm_serv:"Service you're interested in",
-fm_sel:"Select an area...",fm_o1:"Development & Digital Ecosystems",fm_o2:"Infrastructure, Cloud & Managed Services",fm_o3:"Consulting & Human Capital",fm_o4:"Telecoms & Cybersecurity",fm_o5:"Artificial Intelligence & Innovation",fm_o6:"Support & Maintenance",fm_o7:"Other / Multiple areas",
+fm_sel:"Select an area...",fm_o1:"IT Infrastructure & Equipment",fm_o2:"Networks & Cybersecurity",fm_o3:"Software & Mobile Applications",fm_o4:"Fintech & Digital Payment",fm_o5:"IT Consulting & Strategy",fm_o6:"Support & Maintenance",fm_o7:"Other / Multiple areas",
 fm_msg_ph:"Briefly describe your project, needs or questions...",
 fm_send:'Send message <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
 ft_desc:"Congolese digital services company dedicated to supporting businesses and institutions across the DRC in their digital transformation.",
-ft_company:"Company",ft_dev:"Digital Development",ft_cloud:"Cloud & Managed Services",ft_cons:"Consulting & Strategy",ft_cyber:"Cybersecurity",ft_ai:"Artificial Intelligence",ft_sup:"Support",
+ft_company:"Company",ft_dev:"IT Infrastructure",ft_cloud:"Networks & Security",ft_cons:"Software & Apps",ft_cyber:"Fintech",ft_ai:"IT Consulting",ft_sup:"Support",
 ft_val:"Our values",ft_met:"Our approach",ft_why:"Why us",ft_copy:"© 2026 TechBluefin SARL — All rights reserved.",ft_legal:"Legal notice",ft_priv:"Privacy policy",ft_terms:"Terms of use"
 }};
 let currentLang='fr';
